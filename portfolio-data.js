@@ -62,7 +62,8 @@ window.portfolioProjects = [
     shortDescription: "Website I designed to assist users navigating Centrelink processes.",
     skills: ["HTML", "CSS", "JavaScript"],
     links: [
-      { label: "CentrelinkHelper.au", url: "https://centrelinkhelper.au" }
+      { label: "CentrelinkHelper.au", url: "https://centrelinkhelper.au" },
+      { label: "GitHub Repository", url: "https://github.com/TorstenMundtEngineer/CentrelinkHelper" }
     ],
     contentHtml: `
       <p>
@@ -77,7 +78,7 @@ window.portfolioProjects = [
       </p>
 
       <div class="project-image">
-        <img src="Images/Portfolio/centrelinkhelper/centrelinkhelper.webp" alt="CentrelinkHelper web application screenshot">
+        <img src="Images/Portfolio/centrelinkhelper/CentrelinkHelper.webp" alt="CentrelinkHelper web application screenshot">
       </div>
 
       <style>
@@ -587,10 +588,10 @@ window.portfolioProjects = [
               <img src="Images/Portfolio/monash-nova-rover/Nova Headshot.jpg" alt="Torsten Nova Rover Headshot">
           </div>
           <div class="project-image">
-              <img src="Images/Portfolio/monash-nova-rover/Nova2.jpg" alt="Nova Rover Science Team">
+              <img src="Images/Portfolio/monash-nova-rover/Nova2.JPG" alt="Nova Rover Science Team">
           </div>
           <div class="project-image">
-              <img src="Images/Portfolio/monash-nova-rover/Nova3.jpg" alt="Nova Rover Full Team">
+              <img src="Images/Portfolio/monash-nova-rover/Nova3.JPG" alt="Nova Rover Full Team">
           </div>
       </div>
 
