@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Torsten Mundt Enginneer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://torstenmundtengineer.com/contact">
+    <link rel="icon" href="/Images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/Images/favicon.png">
+    <meta name="description" content="Get in touch with Torsten Mundt, a Mechatronics and Robotics Engineering student at Monash University. Contact via email, phone, LinkedIn, or the on-site form.">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init({
+                publicKey: "xCCh5FHC_aYXytbJi"
+            });
+        })();
+    </script>
+</head>
+<body>
+    <!-- Top Banner / Navigation -->
+    <div id="header-placeholder"></div>
+
+    <main class="main-content">
+        <section class="top-contact-bar">
+            <div class="contact-item">
+                <a href="mailto:torstenmundt@outlook.com" target="_blank" aria-label="Email">
+                    <img src="/Images/Icons/envelope-regular-full.svg" alt="Email" class="top-contact-icon">
+                    <span>torstenmundt@outlook.com</span>
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <a href="tel:+61490042522" target="_blank" aria-label="Phone">
+                    <img src="/Images/Icons/square-phone-solid-full.svg" alt="Phone" class="top-contact-icon phone-icon">
+                    <span>+61 490 042 522</span>
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/torsten-mundt" target="_blank" aria-label="LinkedIn">
+                    <img src="/Images/Icons/square-linkedin-brands-solid-full.svg" alt="LinkedIn" class="top-contact-icon">
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Contact Me</h2>
+            <p class="location-text">I am currently located in Melbourne, Australia.</p>
+
+            <form id="contact-form" class="contact-form">
+                <input type="hidden" name="time" value="Jan 09 2026 00:00">
+
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your full name" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5" placeholder="Write your message..." required></textarea>
+
+                <input type="submit" value="Send">
+                <div id="status" style="margin-top:1rem; font-weight:bold;"></div>
+            </form>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- EmailJS form handling -->
+    <script>
+        window.onload = function() {
+            const form = document.getElementById('contact-form');
+            const statusDiv = document.getElementById('status');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        statusDiv.style.color = 'green';
+                        statusDiv.textContent = "✅ Message sent successfully!";
+                        form.reset();
+                    })
+                    .catch((error) => {
+                        statusDiv.style.color = 'red';
+                        statusDiv.textContent = "❌ Failed to send message. Please try again.";
+                        console.error('EmailJS error:', error);
+                    });
+            });
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

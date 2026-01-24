@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /Images/About
+Disallow: /Images/Icons
+Disallow: /Images/Index
+Disallow: /Images/Portfolio
+Disallow: /Images/Headshot.png
+Disallow: /header.html
+Disallow: /footer.html
+Disallow: /google33f38067d24aff6f.html
+Disallow: /script.js
+Disallow: /style.css
+
+Sitemap: https://torstenmundtengineer.com/sitemap.xml

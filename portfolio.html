@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Torsten Mundt Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://torstenmundtengineer.com/portfolio">
+    <link rel="icon" href="/Images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/Images/favicon.png">
+    <meta name="description" content="Explore the engineering projects of Torsten Mundt, a Mechatronics and Robotics student at Monash University. See detailed project descriptions, technologies used, and lessons learned.">
+</head>
+<body>
+
+  <!-- Shared header -->
+  <div id="header-placeholder"></div>
+
+  <!-- Portfolio section -->
+  <main class="page-container">
+    <section class="projects-section">
+    <h2 class="section-heading">Projects & Experience</h2>
+
+    <!-- Sort and Filter Controls -->
+    <div class="project-controls">
+        <div class="discipline-buttons">
+            <button class="discipline-btn" data-discipline="Robotics">Robotics</button>
+            <button class="discipline-btn" data-discipline="Mechanical">Mechanical</button>
+            <button class="discipline-btn" data-discipline="Software">Software</button>
+            <button class="discipline-btn" data-discipline="Other">Other</button>
+        </div>
+        <div class="filter-control">
+            <div class="no-wrap">
+                <label for="skill-filter">Filter by skill:</label>
+                <select id="skill-filter" multiple size="1">
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Cards -->
+    <div id="projects-grid" class="projects-grid"></div>
+    </section>
+  </main>
+
+    <!-- Project Details Overlay -->
+    <div id="project-modal" class="project-modal">
+        <div class="project-modal-content">
+            <span id="modal-close" class="modal-close">&times;</span>
+            <div id="modal-body"></div>
+            <span id="modal-prev" class="modal-nav">&#10094;</span>
+            <span id="modal-next" class="modal-nav">&#10095;</span>
+        </div>
+    </div>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="portfolio-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
