@@ -168,12 +168,22 @@ document.addEventListener("DOMContentLoaded", () => {
             card.addEventListener("click", () => {
                 currentIndex = visibleProjects.indexOf(project);
                 showModal(visibleProjects[currentIndex]);
+                history.replaceState(null, null, `#${project.id}`);
             });
             grid.appendChild(card);
         });
     }
 
     renderProjects(projectsData);
+
+    if (window.location.hash) {
+        const projectId = window.location.hash.substring(1);
+        const project = projectsData.find(p => p.id === projectId);
+        if (project) {
+            currentIndex = projectsData.indexOf(project);
+            showModal(project);
+        }
+    }
 
     function applyFilters() {
         let filtered = [...projectsData];
@@ -198,17 +208,28 @@ document.addEventListener("DOMContentLoaded", () => {
         modal.style.display = "flex";
     }
 
-    modalClose.onclick = () => modal.style.display = "none";
+    modalClose.onclick = () => {
+        modal.style.display = "none";
+        history.replaceState(null, null, window.location.pathname);
+    };
     modalPrev.onclick = () => {
         currentIndex = (currentIndex - 1 + visibleProjects.length) % visibleProjects.length;
-        showModal(visibleProjects[currentIndex]);
+        const project = visibleProjects[currentIndex];
+        showModal(project);
+        window.location.hash = project.id;
     };
+
     modalNext.onclick = () => {
         currentIndex = (currentIndex + 1) % visibleProjects.length;
-        showModal(visibleProjects[currentIndex]);
+        const project = visibleProjects[currentIndex];
+        showModal(project);
+        window.location.hash = project.id;
     };
     modal.addEventListener("click", e => {
-        if (e.target === modal) modal.style.display = "none";
+        if (e.target === modal) {
+            modal.style.display = "none";
+            history.replaceState(null, null, window.location.pathname);
+        }
     });
     document.addEventListener("keydown", e => {
         if (modal.style.display === "flex") {
