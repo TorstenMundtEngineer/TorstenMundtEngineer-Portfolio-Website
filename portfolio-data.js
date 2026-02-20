@@ -3,7 +3,7 @@ window.portfolioProjects = [
   {
     id: "monsol-solar",
     discipline: "Mechanical",
-    title: "MonSol – Industry Innovation Project Internship",
+    title: "Industry Innovation Program with MonSol",
     dates: "Jul 2025 – Present",
     shortDescription: "Designing mechanical frames for modular Concertina solar technology.",
     skills: ["CAD", "FEA", "Mechanical Design", "Renewable Energy", "Solar Engineering", "Prototyping", "Harmonic Testing"],
