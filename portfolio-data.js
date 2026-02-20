@@ -330,7 +330,36 @@ window.portfolioProjects = [
         This project demonstrated full integration of perception, decision-making, and operator control
         in a fully autonomous robotic system.
       </p>
-      <br><p>Pictures Coming Soon</p>
+      <div class="project-images-container">
+        <div class="project-image">
+            <img src="Media/Portfolio/intelligent-robotics-gui-ml/Intelligent Robotics 1.jpeg" alt="Intelligent Robotics 1">
+        </div>
+        <div class="project-image">
+            <img src="Media/Portfolio/intelligent-robotics-gui-ml/Intelligent Robotics 2.jpeg" alt="Intelligent Robotics 2">
+        </div>
+        <div class="project-image">
+            <img src="Media/Portfolio/intelligent-robotics-gui-ml/Intelligent Robotics 3.jpeg" alt="Intelligent Robotics 3">
+        </div>
+      </div>
+
+      <style>
+      .project-images-container {
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+          flex-wrap: wrap;
+          margin-top: 1rem;
+      }
+
+      .project-image img {
+          max-width: 100%;
+          max-height: 370px;
+          border-radius: 8px;
+          box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+          object-fit: contain;
+          flex: 1 1 45%;
+      }
+      </style>
     `
   },
 

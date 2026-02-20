@@ -1,9 +1,9 @@
 User-agent: *
-Disallow: /Images/About
-Disallow: /Images/Icons
-Disallow: /Images/Index
-Disallow: /Images/Portfolio
-Disallow: /Images/Headshot.png
+Disallow: /Media/About
+Disallow: /Media/Icons
+Disallow: /Media/Index
+Disallow: /Media/Portfolio
+Disallow: /Media/Headshot.png
 Disallow: /header.html
 Disallow: /footer.html
 Disallow: /google33f38067d24aff6f.html

@@ -507,6 +507,17 @@ html, body {
   z-index: 1; 
 }
 
+.multi-select-input:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.multi-select:has(.multi-select-dropdown[style*="display: block"]) 
+.multi-select-input {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
 .multi-select-input {
   background: #1e293b;
   color: #ffffff;
@@ -717,6 +728,12 @@ html, body {
     line-height: 1.6;
 }
 
+.about-volunteering ul,
+.about-hobbies ul {
+    font-size: 1.1rem;  /* slightly bigger than the default 1.4rem */
+}
+
+
 .High-School-images {
     display: flex;
     justify-content: center; /* centre the group */
@@ -851,6 +868,7 @@ html, body {
     justify-content: center;
     gap: 0.5rem;
     flex-wrap: wrap;
+    margin-top: 1rem;
 }
 
 .hobbies-images .hobbies-image {
@@ -872,6 +890,26 @@ html, body {
     height: auto;
     border-radius: 10px;
     object-fit: cover;
+}
+
+.intro-flex {
+    display: flex;
+    align-items: flex-start; /* align top of image with top of text */
+    gap: 1.5rem;            /* space between image and text */
+    flex-wrap: wrap;         /* allows wrapping on smaller screens */
+}
+
+.intro-image img {
+    width: 180px;            /* smaller image */
+    height: auto;
+    border-radius: 16px;
+}
+
+.intro-flex ul {
+    flex: 1;                 /* take up remaining horizontal space */
+    padding-left: 1rem;
+    margin-top: 0;
+    font-size: 1.2rem;       /* increase font size */
 }
 
 .Uni-images {
@@ -1055,6 +1093,14 @@ html, body {
         transform: translateY(0px);
     }
     .discipline-btn.active {
+        background-color: #2563eb;
+        transform: translateY(-2px);
+    }
+    .multi-select-input:hover {
+        background-color: #1e293b;
+        transform: translateY(0px);
+    }
+    .multi-select-input.active {
         background-color: #2563eb;
         transform: translateY(-2px);
     }
