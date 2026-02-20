@@ -1,4 +1,5 @@
 window.portfolioProjects = [
+  // MonSol
   {
     id: "monsol-solar",
     discipline: "Mechanical",
@@ -26,10 +27,10 @@ window.portfolioProjects = [
       </p>
       <div class="project-images-container">
           <div class="project-image">
-              <img src="Images/Portfolio/monsol-solar/MonSol1.jpg" alt="MonSol Image 1">
+              <img src="Media/Portfolio/monsol-solar/MonSol1.jpg" alt="MonSol Image 1">
           </div>
           <div class="project-image">
-              <img src="Images/Portfolio/monsol-solar/MonSol2.jpg" alt="MonSol Image 2">
+              <img src="Media/Portfolio/monsol-solar/MonSol2.jpg" alt="MonSol Image 2">
           </div>
       </div>
 
@@ -54,6 +55,7 @@ window.portfolioProjects = [
     `
   },
   
+  // CentrelinkHelper
   {
     id: "centrelinkhelper",
     discipline: "Software",
@@ -78,7 +80,7 @@ window.portfolioProjects = [
       </p>
 
       <div class="project-image">
-        <img src="Images/Portfolio/centrelinkhelper/CentrelinkHelper.webp" alt="CentrelinkHelper web application screenshot">
+        <img src="Media/Portfolio/centrelinkhelper/CentrelinkHelper.webp" alt="CentrelinkHelper web application screenshot">
       </div>
 
       <style>
@@ -98,6 +100,7 @@ window.portfolioProjects = [
     `
   },
 
+  // Tracked Robot
   {
     id: "tracked-robot",
     discipline: "Robotics",
@@ -123,16 +126,16 @@ window.portfolioProjects = [
       </p>
       <div class="project-images-container">
           <div class="project-image">
-              <img src="Images/Portfolio/tracked-robot/TrackedRobot1.png" alt="Tracked Robot Image 1">
+              <img src="Media/Portfolio/tracked-robot/TrackedRobot1.png" alt="Tracked Robot Image 1">
           </div>
           <div class="project-image">
-              <img src="Images/Portfolio/tracked-robot/TrackedRobot2.jpeg" alt="Tracked Robot Image 2">
+              <img src="Media/Portfolio/tracked-robot/TrackedRobot2.jpeg" alt="Tracked Robot Image 2">
           </div>
           <div class="project-image">
-              <img src="Images/Portfolio/tracked-robot/TrackedRobot3.jpeg" alt="Tracked Robot Image 3">
+              <img src="Media/Portfolio/tracked-robot/TrackedRobot3.jpeg" alt="Tracked Robot Image 3">
           </div>
           <div class="project-image-1">
-              <img src="Images/Portfolio/tracked-robot/TrackedRobot4.png" alt="Tracked Robot Image 4">
+              <img src="Media/Portfolio/tracked-robot/TrackedRobot4.png" alt="Tracked Robot Image 4">
           </div>
       </div>
 
@@ -176,6 +179,7 @@ window.portfolioProjects = [
     `
   },
 
+  // John Holland
   {
     id: "john-holland",
     discipline: "Robotics",
@@ -190,16 +194,16 @@ window.portfolioProjects = [
         gaining first-hand exposure to the planning and coordination required to work safely on an active network.
       </p>
       <p>
-        I improved existing Excel tools and introduced process automation to streamline permit preparation,
-        improving clarity and reducing manual effort.
+        I improved existing Excel tools and introduced process automation using Power Automate and Power Apps
+        to streamline permit preparation, improving clarity and reducing manual effort.
       </p>
       <p>
-        I worked closely with stakeholders from John Holland, Metro, and V/Line to coordinate access requirements and maintain clear communication.
-        In parallel, I led the implementation of RFID technology (3M EMS Ball Markers) within the Combined Services Route,
-        programming markers with accurate asset data to support long-term infrastructure management.
+        I worked closely with stakeholders from John Holland, Metro, and V/Line to coordinate access requirements
+        and maintain clear communication. In parallel, I led the implementation of RFID technology (3M EMS Ball Markers)
+        within the Combined Services Route, programming markers with accurate asset data to support long-term infrastructure management.
       </p>
       <div class="project-image">
-        <img src="Images/Portfolio/john-holland/NWPA.png" alt="NWPA Engineers on Site">
+        <img src="Media/Portfolio/john-holland/NWPA.png" alt="NWPA Engineers on Site">
       </div>
       <style>
         .project-image {
@@ -218,6 +222,64 @@ window.portfolioProjects = [
     `
   },
 
+    // Monash Nova Rover
+  {
+    id: "monash-nova-rover",
+    discipline: "Robotics",
+    title: "Monash Nova Rover – Science Sub-Team",
+    dates: "Jan 2022 – Jul 2023",
+    shortDescription: "Engineered rover components for life-detection systems and supported STEM outreach.",
+    skills: ["CAD", "3D Printing", "Electrical Systems"],
+    links: [
+      { label: "Monash Nova Rover", url: "https://www.novarover.space" }
+    ],
+    contentHtml: `
+      <p>
+        As part of the Science sub-team, I upgraded the rover’s linear actuator (rack and pinion) to improve precision,
+        torque, and reduce mechanical play.
+      </p>
+      <p>
+        I also helped to redesigned the sample-collection scoop and developed a new pump system to transport samples
+        to different scientific test locations within the rover payload.
+      </p>
+      <p>
+        Components were fabricated using a combination of 3D printing and machining.
+        Alongside technical work, I supported STEM outreach by engaging with high school and first-year university students.
+      </p>
+      <div class="project-images-container">
+          <div class="project-image">
+              <img src="Media/Portfolio/monash-nova-rover/Nova Headshot.jpg" alt="Torsten Nova Rover Headshot">
+          </div>
+          <div class="project-image">
+              <img src="Media/Portfolio/monash-nova-rover/Nova2.JPG" alt="Nova Rover Science Team">
+          </div>
+          <div class="project-image">
+              <img src="Media/Portfolio/monash-nova-rover/Nova3.JPG" alt="Nova Rover Full Team">
+          </div>
+      </div>
+
+      <style>
+      .project-images-container {
+          display: flex;
+          justify-content: center;
+          gap: 1rem; /* space between images */
+          flex-wrap: wrap; /* wrap to next line on smaller screens */
+          margin-top: 1rem;
+      }
+
+      .project-image img {
+          max-width: 100%;
+          max-height: 370px;
+          border-radius: 8px;
+          box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+          object-fit: contain;
+          flex: 1 1 45%; /* take about 45% of container, shrink if needed */
+      }
+      </style>
+    `
+  },
+
+  // Robovoid
   {
     id: "robovoid",
     discipline: "Robotics",
@@ -240,6 +302,7 @@ window.portfolioProjects = [
     `
   },
 
+  // Intelligent Robotics
   {
     id: "intelligent-robotics-gui-ml",
     discipline: "Robotics",
@@ -271,6 +334,7 @@ window.portfolioProjects = [
     `
   },
 
+  // Machine Learning & Neural Networks
   {
     id: "ml-neural-networks",
     discipline: "Software",
@@ -282,7 +346,6 @@ window.portfolioProjects = [
       "Machine Learning",
       "Neural Networks",
       "PyTorch",
-      "Data Analysis",
       "Data Preprocessing",
       "Computer Vision",
       "Speech Recognition"
@@ -305,7 +368,7 @@ window.portfolioProjects = [
 
       <div class="project-images-container">
         <div class="project-image">
-          <img src="Images/Portfolio/ml-neural-networks/Image 1.png" alt="Gradient Descent and Decision Boundary Visualisations">
+          <img src="Media/Portfolio/ml-neural-networks/Image 1.png" alt="Gradient Descent and Decision Boundary Visualisations">
         </div>
       </div>
 
@@ -318,10 +381,10 @@ window.portfolioProjects = [
 
       <div class="project-images-container">
         <div class="project-image image-small">
-          <img src="Images/Portfolio/ml-neural-networks/Image 2.png" alt="MLP Autoencoder Reconstruction 1">
+          <img src="Media/Portfolio/ml-neural-networks/Image 2.png" alt="MLP Autoencoder Reconstruction 1">
         </div>
         <div class="project-image">
-          <img src="Images/Portfolio/ml-neural-networks/Image 3.png" alt="MLP Autoencoder Reconstruction 2">
+          <img src="Media/Portfolio/ml-neural-networks/Image 3.png" alt="MLP Autoencoder Reconstruction 2">
         </div>
       </div>
 
@@ -334,13 +397,13 @@ window.portfolioProjects = [
 
       <div class="project-images-container">
         <div class="project-image">
-          <img src="Images/Portfolio/ml-neural-networks/Image 4.png" alt="CNN Saliency Map">
+          <img src="Media/Portfolio/ml-neural-networks/Image 4.png" alt="CNN Saliency Map">
         </div>
         <div class="project-image">
-          <img src="Images/Portfolio/ml-neural-networks/Image 5.png" alt="CNN Confusion Matrix">
+          <img src="Media/Portfolio/ml-neural-networks/Image 5.png" alt="CNN Confusion Matrix">
         </div>
         <div class="project-image">
-          <img src="Images/Portfolio/ml-neural-networks/Image 6.png" alt="CNN Classification Results">
+          <img src="Media/Portfolio/ml-neural-networks/Image 6.png" alt="CNN Classification Results">
         </div>
       </div>
 
@@ -354,7 +417,7 @@ window.portfolioProjects = [
 
       <div class="project-images-container">
         <div class="project-image">
-          <img src="Images/Portfolio/ml-neural-networks/Image 7.png" alt="Speech Recognition CNN Results">
+          <img src="Media/Portfolio/ml-neural-networks/Image 7.png" alt="Speech Recognition CNN Results">
         </div>
       </div>
 
@@ -368,7 +431,7 @@ window.portfolioProjects = [
 
       <div class="project-images-container">
         <div class="project-image">
-          <img src="Images/Portfolio/ml-neural-networks/Image 8.png" alt="Speech Recognition CNN Results">
+          <img src="Media/Portfolio/ml-neural-networks/Image 8.png" alt="Speech Recognition CNN Results">
         </div>
       </div>
 
@@ -406,6 +469,7 @@ window.portfolioProjects = [
     `
   },
 
+  // Analogue Electronics
   {
   id: "analogue-electronics-rms",
   discipline: "Robotics",
@@ -453,7 +517,7 @@ window.portfolioProjects = [
 
     <div class="project-images-container">
         <div class="project-image">
-          <img src="Images/Portfolio/analogue-electronics-rms/Image 1.webp" alt="Full Circuit Diagram">
+          <img src="Media/Portfolio/analogue-electronics-rms/Image 1.webp" alt="Full Circuit Diagram">
         </div>
       </div>
 
@@ -491,35 +555,35 @@ window.portfolioProjects = [
     <h5>Full-Wave Precision Rectifier Circuit</h5>
     <div class="project-images-container">
       <div class="project-image">
-        <img src="Images/Portfolio/analogue-electronics-rms/Image 2.webp" alt="Full-Wave Precision Rectifier Circuit Diagram">
+        <img src="Media/Portfolio/analogue-electronics-rms/Image 2.webp" alt="Full-Wave Precision Rectifier Circuit Diagram">
       </div>
     </div>
 
     <h5>Log–Antilog Squarer Circuit</h5>
     <div class="project-images-container">
       <div class="project-image">
-        <img src="Images/Portfolio/analogue-electronics-rms/Image 3.webp" alt="Log–Antilog Squarer Circuit Diagram">
+        <img src="Media/Portfolio/analogue-electronics-rms/Image 3.webp" alt="Log–Antilog Squarer Circuit Diagram">
       </div>
     </div>
 
     <h5>Averaging and Buffering Circuit</h5>
     <div class="project-images-container">
       <div class="project-image">
-        <img src="Images/Portfolio/analogue-electronics-rms/Image 4.webp" alt="Averaging and Buffering Circuit Diagram">
+        <img src="Media/Portfolio/analogue-electronics-rms/Image 4.webp" alt="Averaging and Buffering Circuit Diagram">
       </div>
     </div>
 
     <h5>Log–Antilog Square Root Circuit</h5>
     <div class="project-images-container">
       <div class="project-image">
-        <img src="Images/Portfolio/analogue-electronics-rms/Image 5.webp" alt="Log–Antilog Square Root Circuit Diagram">
+        <img src="Media/Portfolio/analogue-electronics-rms/Image 5.webp" alt="Log–Antilog Square Root Circuit Diagram">
       </div>
     </div>
 
     <h5>Output Scaling and Offset Circuit</h5>
     <div class="project-images-container">
       <div class="project-image">
-        <img src="Images/Portfolio/analogue-electronics-rms/Image 6.webp" alt="Output Scaling and Offset Circuit Diagram">
+        <img src="Media/Portfolio/analogue-electronics-rms/Image 6.webp" alt="Output Scaling and Offset Circuit Diagram">
       </div>
     </div>
 
@@ -560,62 +624,316 @@ window.portfolioProjects = [
   `
   },
 
+    // Rotationally Invariant Barcode Reader
   {
-    id: "monash-nova-rover",
-    discipline: "Robotics",
-    title: "Monash Nova Rover – Science Sub-Team",
-    dates: "Jan 2022 – Jul 2023",
-    shortDescription: "Engineered rover components for life-detection systems and supported STEM outreach.",
-    skills: ["CAD", "3D Printing", "Electrical Systems"],
-    links: [
-      { label: "Monash Nova Rover", url: "https://www.novarover.space" }
+    id: "barcode-reader",
+    discipline: "Software",
+    title: "Rotationally Invariant Barcode Reader",
+    dates: "Apr 2024 – Jun 2024",
+    shortDescription: "Developed a barcode reader in C++ with rotation correction and checksum validation, as part of the Monash unit TRC3500.",
+    skills: [
+      "C++",
+      "Computer Vision",
+      "Image Thresholding",
+      "Signal Processing",
+      "Algorithm Design"
     ],
+    links: [],
     contentHtml: `
       <p>
-        As part of the Science sub-team, I upgraded the rover’s linear actuator (rack and pinion) to improve precision,
-        torque, and reduce mechanical play.
+        Built a barcode reader from first principles without using existing libraries.
+        The system captured images, applied adaptive thresholding, corrected rotation,
+        decoded the UPC signal, and verified correctness using checksums.
+        Performance testing showed detection accuracy above <strong>70%</strong> for distances below <strong>0.425 m</strong>.
       </p>
-      <p>
-        I also helped to redesigned the sample-collection scoop and developed a new pump system to transport samples
-        to different scientific test locations within the rover payload.
-      </p>
-      <p>
-        Components were fabricated using a combination of 3D printing and machining.
-        Alongside technical work, I supported STEM outreach by engaging with high school and first-year university students.
-      </p>
+      <p><strong>Watch the demo video below to see the barcode reader in action!</strong></p>
+
       <div class="project-images-container">
-          <div class="project-image">
-              <img src="Images/Portfolio/monash-nova-rover/Nova Headshot.jpg" alt="Torsten Nova Rover Headshot">
-          </div>
-          <div class="project-image">
-              <img src="Images/Portfolio/monash-nova-rover/Nova2.JPG" alt="Nova Rover Science Team">
-          </div>
-          <div class="project-image">
-              <img src="Images/Portfolio/monash-nova-rover/Nova3.JPG" alt="Nova Rover Full Team">
-          </div>
+        <div class="project-image">
+          <img src="Media/Portfolio/barcode-reader/Barcode.png" alt="Barcode reader processing output">
+        </div>
+        <iframe width="900" height="506" src="https://www.youtube.com/embed/uTT7zlWWtts?si=AFLYaX18xymKLiIF&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
 
       <style>
-      .project-images-container {
+        .project-images-container {
           display: flex;
           justify-content: center;
-          gap: 1rem; /* space between images */
-          flex-wrap: wrap; /* wrap to next line on smaller screens */
+          gap: 0.75rem;
+          flex-wrap: wrap;
           margin-top: 1rem;
-      }
+        }
 
-      .project-image img {
+        .project-image img {
           max-width: 100%;
-          max-height: 370px;
+          max-height: 420px;
           border-radius: 8px;
           box-shadow: 0 6px 16px rgba(0,0,0,0.35);
           object-fit: contain;
-          flex: 1 1 45%; /* take about 45% of container, shrink if needed */
-      }
+          flex: 1 1 45%;
+        }
       </style>
     `
   },
 
+  // Blob Statistics & Image Segmentation
+  {
+    id: "blob-statistics",
+    discipline: "Software",
+    title: "Blob Statistics & Image Segmentation",
+    dates: "Apr 2024 – Jun 2024",
+    shortDescription: "C++ project for detecting and analysing blobs from webcam images, developed as part of the Monash unit TRC3500.",
+    skills: [
+      "C++",
+      "Computer Vision",
+      "Image Thresholding",
+      "Feature Extraction",
+      "Object Detection"
+    ],
+    links: [],
+    contentHtml: `
+      <p>
+        Developed a program to detect blobs, compute area, centroid, and rotation angle.
+        Achieved orientation accuracy within <strong>1 degree</strong> of ground truth in over <strong>80%</strong> of test cases.
+        Extended the pipeline to classify electrical components using shape, colour, centroid position, and orientation.
+      </p>
+      <p><strong>Watch the demo video below to see the blob detection and analysis in action!</strong></p>
+      <div class="project-images-container">
+        <div class="project-image">
+          <img src="Media/Portfolio/blob-statistics/Blob Statistics.png" alt="Blob Statistics Image showing original and decoded blobs">
+        </div>
+      </div>
+      <iframe class="project-video" width="900" height="506" 
+          src="https://www.youtube.com/embed/SfWzqyDuwic?si=Na5l3YRTG8tdkC2L&autoplay=1&mute=1" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <style>
+        .project-images-container {
+          display: flex;
+          justify-content: center;
+          gap: 0.75rem;
+          flex-wrap: wrap;
+          margin-top: 1rem;
+        }
+
+        .project-image img {
+          max-width: 100%;
+          max-height: 420px;
+          border-radius: 8px;
+          box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+          object-fit: contain;
+          flex: 1 1 45%;
+        }
+
+        .project-video {
+          width: 100%;
+          max-width: 900px;
+          margin: 1.5rem auto;
+          display: block;
+          border-radius: 10px;
+          box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+        }
+      </style>
+    `
+  },
+
+  // Ultrasonic Distance Sensor (Simulink & UART)
+  {
+    id: "ultrasonic-sensor",
+    discipline: "Robotics",
+    title: "Ultrasonic Distance Sensor System",
+    dates: "Apr 2024 – Jun 2024",
+    shortDescription: "Embedded sensing project using MATLAB Simulink and UART, as part of the Monash unit TRC3500.",
+    skills: [
+      "MATLAB",
+      "Simulink",
+      "Embedded Systems",
+      "Sensors",
+      "UART",
+      "Control Systems"
+    ],
+    links: [],
+    contentHtml: `
+      <p>
+        Built an embedded system to measure distance using an ultrasonic sensor and transmit data via UART.
+        Displayed processed output on a 7-segment display, achieving accuracy of <strong>±3 mm</strong> over 3–30 cm.
+        Required careful handling of UART timing, hardware priorities, interrupts, and real-time constraints.
+      </p>
+      <p><strong>Watch the demo video below to see the ultrasonic distance sensor in action!</strong></p>
+
+      <iframe width="900" height="506" class="project-video"
+          src="https://www.youtube.com/embed/0F8KSmo4qS4?si=k5moYrDdsCUialel&autoplay=1&mute=1" 
+          title="YouTube video player" 
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+
+    <style>
+      .project-images-container {
+        display: flex;
+        justify-content: center;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+      }
+
+      .project-image img {
+        max-width: 100%;
+        max-height: 420px;
+        border-radius: 8px;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+        object-fit: contain;
+        flex: 1 1 45%;
+      }
+
+      .project-video {
+        width: 100%;
+        max-width: 900px;
+        margin: 1.5rem auto;
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+      }
+    </style>
+    `
+  },
+
+    // Automated Chemical Etching System Prototype
+  {
+    id: "chemical-etching-system",
+    discipline: "Robotics",
+    title: "Automated Chemical Etching System Prototype",
+    dates: "Jul 2023 - Oct 2023",
+    shortDescription: "Emulating a chemical etching system with mechanical design, sensors, and real-time Simulink control.",
+    skills: ["PLC Programming", "Automation", "Simulink", "MATLAB", "CAD", "FEA", "Sensors"],
+    links: [],
+    contentHtml: `
+      <p>
+        As part of the Monash unit TRC3000, I developed a prototype emulating an industrial chemical etching system.
+        The project combined mechanical design, sensor integration, and real-time control using Simulink to simulate a fully automated process.
+      </p>
+
+      <h4 class="project-subheading">Gripper Design</h4>
+      
+      <p>
+        I worked on the design and fabrication of a lightweight, strong gripper mounted on an Ender 3 Pro 3D printer. 
+        The gripper was tasked with picking up thin metal sheets (as small as 1mm) of varying sizes and orientations. 
+        We implemented a rack-and-pinion mechanism, leveraging the printer’s existing gear and motor control via its onboard electronics. 
+        SolidWorks FEA informed improvements to high-stress areas, including the rack teeth and scoop arm. 
+        The gripper was fully symmetrical, enabling efficient assembly and versatile operation.
+      </p>
+      <p><strong>Watch the video below to see the gripper in action!</strong></p>
+
+      <div class="project-images-container">
+          <div class="project-image">
+              <img src="Media/Portfolio/chemical-etching-system/GripperPhoto1.png" alt="Gripper Photo 1">
+          </div>
+          <div class="project-image">
+              <img src="Media/Portfolio/chemical-etching-system/GripperPhoto2.png" alt="Gripper Photo 2">
+          </div>
+          <iframe class="project-video" width="900" height="506" 
+              src="https://www.youtube.com/embed/t-VBew_xZUY?si=OcCG2nJSWR7WhrRa&autoplay=1&mute=1" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+      </div>
+
+      <h4 class="project-subheading">Simulink Integration</h4>
+      <div class="indented-list">
+        <ul>
+          <li> 
+            <strong>Rotating platform:</strong> Servo-actuated for precise angular positioning and continuous reciprocating motion.
+          </li>
+          <li>
+            <strong>Temperature monitoring:</strong> DS18B20 thermistor measured etchant temperature in real time.
+          </li>
+          <li>
+            <strong>Collision detection:</strong> IMU measured platform acceleration to calculate force and impulse, highlighting challenges of real-time collision detection due to sensor noise.
+          </li>
+          <li>
+            <strong>Load cell sensing:</strong> Load cell measured the mass of etchant in the cup to infer fill level.
+          </li>
+          <li>
+            <strong>Ultrasonic mister:</strong> Simulated etching via relay-controlled activation.
+          </li>
+          <li>
+            <strong>Sleep mode:</strong> MOSFET and relay system allowed safe shutdown of sensors and actuators for idle or emergency conditions.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project-images-container">
+          <iframe class="project-video" width="900" height="506" 
+              src="https://www.youtube.com/embed/NTc-BU_0bCk?si=EnzG6CeWextFm364&autoplay=1&mute=1" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <div class="project-image">
+              <img src="Media/Portfolio/chemical-etching-system/Simulink Interface Screenshot.png" alt="Simulink interface screenshot">
+          </div>
+      </div>
+
+      <h4 class="project-subheading">Project Insights</h4>
+      <p>
+        This project provided hands-on experience in real-time hardware-software integration, sensor noise management, and actuator coordination.
+        I developed skills in system-level design, control logic prioritisation, and understanding how mechanical design choices directly impact automation performance.
+        Simulink integration gave me insight into the interaction of multiple subsystems and the importance of software in orchestrating reliable automated behaviour.
+      </p>
+
+      <style>
+        .indented-list {
+          margin-left: 0.7rem;
+        }
+
+        .indented-list ul {
+          padding-left: 0.7rem;
+        }
+
+        .project-images-container {
+          display: flex;
+          justify-content: center;
+          gap: 0.75rem;
+          flex-wrap: wrap;
+          margin-top: 1rem;
+        }
+
+        .project-image {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 1rem;
+        }
+
+        .project-image img {
+          max-width: 100%;
+          max-height: 420px;
+          border-radius: 8px;
+          box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+          object-fit: contain;
+          flex: 1 1 45%;
+        }
+
+        .project-subheading {
+          font-weight: bold;
+          text-decoration: underline;
+          margin-top: 1.5rem;
+        }
+
+        .project-video {
+          width: 100%;
+          max-width: 900px;
+          margin: 1rem auto;
+          display: block;
+          box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+        }
+      </style>
+    `
+  },
+
+  // Warman Design & Build Competition
   {
     id: "warman-design-competition",
     discipline: "Mechanical",
@@ -641,13 +959,13 @@ window.portfolioProjects = [
       </p>
       <div class="project-images-container">
           <div class="project-image">
-              <img src="Images/Portfolio/warman-design-competition/WARMAN1.jpg" alt="WARMAN Competition Robot">
+              <img src="Media/Portfolio/warman-design-competition/WARMAN1.jpg" alt="WARMAN Competition Robot">
           </div>
           <div class="project-image">
-              <img src="Images/Portfolio/warman-design-competition/WARMAN2.jpg" alt="WARMAN Competition Robot">
+              <img src="Media/Portfolio/warman-design-competition/WARMAN2.jpg" alt="WARMAN Competition Robot">
           </div>
           <div class="project-image">
-              <img src="Images/Portfolio/warman-design-competition/WARMAN3.jpeg" alt="WARMAN Competition Robot">
+              <img src="Media/Portfolio/warman-design-competition/WARMAN3.jpeg" alt="WARMAN Competition Robot">
           </div>
       </div>
 
@@ -672,6 +990,169 @@ window.portfolioProjects = [
     `
   },
 
+  // ECE2072 FPGA Project
+  {
+    id: "ece2072-fpga",
+    discipline: "Robotics",
+    title: "ECE2072 – FPGA Project",
+    dates: "Aug 2022 - Oct 2022",
+    shortDescription: "FPGA-based digital design project implementing a cognition timer.",
+    skills: ["FPGA Design", "Verilog", "Digital Logic", "Finite State Machines (FSMs)"],
+    links: [],
+    contentHtml: `
+      <p>
+        For my ECE2072 – Digital Systems unit at Monash University, I designed and implemented a cognition timer on an FPGA. 
+        The timer measures the time it takes for a user to process a simple task: adding a pair of octal digits displayed 
+        on 7-segment displays and submitting the result using slide switches. The challenge was not just in measuring 
+        the time, but in ensuring accurate input capture, handling errors, and providing a clear, reliable visual output.
+      </p>
+      <p>
+        I developed a six-state finite state machine (FSM) to control the system, manage timer resets, and display errors 
+        if the user submitted the wrong answer or took too long. Debouncing logic was implemented for the switches to 
+        prevent false readings, and the timer displayed user reaction time in 100-millisecond increments. The reset 
+        and set states were deliberately separated for clarity and maintainability.
+      </p>
+      <p>
+        The entire design was implemented in Verilog using a high-level behavioural style, avoiding bit-level flip-flop instantiations. 
+        This approach made the system easier to understand, modify, and debug. After completing the project, I analysed the FPGA 
+        resource usage and found that the design used 303 flip-flops. This is a moderate number that reflects the balance between implementing rich functionality and the associated logic and computational requirements.
+      </p>
+      <p>
+        The project reinforced my understanding of digital logic, FSM design, real-time embedded systems, and FPGA synthesis and constraints. 
+        It also gave me hands-on experience in converting theoretical design principles into a working, interactive hardware system.
+      </p>
+
+      <p><strong>Watch the demo video below to see the FPGA cognition timer in action!</strong></p>
+
+      <iframe class="project-video" width="900" height="506" 
+        src="https://www.youtube.com/embed/Ze-0FLiwKd0?si=DuiBtfwKIH1-_lQP&autoplay=1&mute=1" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <style>
+        .project-images-container {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .project-image img {
+            max-width: 100%;
+            max-height: 420px;
+            border-radius: 8px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+            object-fit: contain;
+            flex: 1 1 45%;
+        }
+
+        .project-video {
+            width: 100%;
+            max-width: 900px;
+            margin: 1.5rem auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+        }
+      </style>
+    `
+  },
+  
+  // ECE2071 Project
+  {
+    id: "ece2071",
+    discipline: "Software",
+    title: "ECE2071 – Computer Organisation & Programming",
+    dates: "Mar 2022 - Jun 2022",
+    shortDescription: "Digital systems project exploring software execution from MIPS assembly to C.",
+    skills: ["C Programming", "Algorithm Design", "Data Structures"],
+    links: [],
+    contentHtml: `
+      <p>
+        This project was completed as part of the Monash University unit <strong>ECE2071 – Computer Organisation & Programming</strong>,
+        which focused on understanding computers from the ground up — starting with assembly language and binary representations
+        and progressing to structured programming in C. The unit emphasised how high-level languages map to low-level execution,
+        with a strong focus on memory access, pointer arithmetic, and algorithm efficiency.
+      </p>
+
+      <p>
+        As part of the course, I wrote MIPS assembly programs to manipulate memory and explored how high-level operations
+        translate into load/store and arithmetic instructions. These exercises reinforced my understanding of registers,
+        addressing, and memory-mapped data, building a solid foundation in low-level programming.
+      </p>
+
+      <h4 class="project-subheading">Assignment 1 — Palindrome Detection in the Digits of π</h4>
+      <p>
+        I built a C program to analyse 50 million digits of π, searching for numeric palindromes of different lengths.
+        The program dynamically allocated and resized strings in real time as the digits streamed from file, allowing
+        efficient processing of such a large dataset. I also tracked statistics for each palindrome length, including
+        frequency and average spacing, and produced a clear, formatted summary of palindrome lengths, counts, and mean distances.
+      </p>
+
+      <div class="project-images-container">
+        <div class="project-image">
+          <img src="Media/Portfolio/ece2071/Assignment 1 Output.png" alt="Sample output of palindrome analysis">
+        </div>
+        <div class="project-image">
+          <img src="Media/Portfolio/ece2071/Assignment 1 Code.png" alt="C code snippet for palindrome detection">
+        </div>
+      </div>
+
+      <h4 class="project-subheading">Assignment 2 — Maze Shortest Path Solver</h4>
+      <p>
+        I developed a shortest-path solver for arbitrary square mazes using breadth-first search (BFS),
+        an algorithm that explores all possible moves level by level to guarantee finding the shortest path.
+        Maze layouts were read from text files and stored in dynamically allocated memory structures. 
+        I implemented custom data structures with linked lists to manage traversal and created a parallel integer grid 
+        to track distances while avoiding character overflow issues. After completing the BFS, the program backtracked 
+        from the target node to reconstruct and output the optimal path through the maze.
+      </p>
+
+      <div class="project-images-container">
+        <div class="project-image">
+          <img src="Media/Portfolio/ece2071/Assignment 2 Output.png" alt="Maze input and pathfinding visualisation (start 4,8, end 80,77)">
+        </div>
+        <div class="project-image">
+          <img src="Media/Portfolio/ece2071/Assignment 2 Code.png" alt="C code for BFS maze solver">
+        </div>
+      </div>
+
+      <style>
+        .project-images-container {
+          display: flex;
+          justify-content: center;
+          gap: 0.75rem;
+          flex-wrap: wrap;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+
+        .project-image {
+          display: flex;
+          justify-content: center;
+        }
+
+        .project-image img {
+          max-width: 100%;
+          max-height: 420px;
+          border-radius: 8px;
+          box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+          object-fit: contain;
+          flex: 1 1 45%;
+        }
+
+        .project-subheading {
+          font-weight: bold;
+          text-decoration: underline;
+          margin-top: 1.5rem;
+        }
+      </style>
+    `
+  },
+
+  // Bunnings Warehouse
   {
     id: "bunnings",
     discipline: "Other",
@@ -692,6 +1173,7 @@ window.portfolioProjects = [
     `
   },
 
+  // Lismore City Council
   {
     id: "lismore-internship",
     discipline: "Other",
@@ -710,5 +1192,4 @@ window.portfolioProjects = [
       </p>
     `
   }
-
 ];
