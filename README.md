@@ -51,10 +51,10 @@ Graduating in June 2026, I aim to secure my first full-time engineering role. Be
 
 ## Contact & Links
 
-- Website: [torstenmundtengineer.com](https://torstenmundtengineer.com)  
-- Email: `torstenmundt@outlook.com`  
-- LinkedIn: [linkedin.com/in/torsten-mundt](https://linkedin.com/in/torsten-mundt)  
-- Phone: +61 490 042 522  
+- Website: [torstenmundtengineer.com](https://torstenmundtengineer.com)
+- Email: [torstenmundt@outlook.com](mailto:torstenmundt@outlook.com)
+- LinkedIn: [linkedin.com/in/torsten-mundt](https://linkedin.com/in/torsten-mundt)
+- Phone: [+61 490 042 522](tel:+61490042522)
 
 ---
 
