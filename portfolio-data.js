@@ -279,6 +279,90 @@ window.portfolioProjects = [
     `
   },
 
+// Yanshee Humanoid Robot
+{
+  id: "yanshee-humanoid-robot",
+  discipline: "Robotics",
+  title: "Yanshee Humanoid Robot",
+  dates: "Apr 2026",
+  shortDescription: "Programmed a humanoid robot using Robot Operating System (ROS), cubic spline interpolation, and inverse kinematics for trajectory generation.",
+  skills: [
+    "MATLAB",
+    "Robot Operating System (ROS)",
+    "Trajectory Generation",
+    "Inverse Kinematics",
+    "Joint Space Control"
+  ],
+  links: [],
+  contentHtml: `
+    <p>
+      As part of the unit TRC4800, I had the opportunity to program and work with a Yanshee humanoid robot in a laboratory setting.
+      The activity focused on implementing and analysing trajectory generation techniques for robotic motion planning.
+    </p>
+
+    <p>
+      In this unit, I developed an understanding of how robot motion can be generated either by mapping desired end-effector positions
+      into joint space using inverse kinematics, or by directly planning trajectories in joint space. I implemented cubic spline
+      interpolation as well as linear and parabolic interpolation methods to generate smooth, continuous motion between via points.
+    </p>
+
+    <p>
+      Working with the robot reinforced the practical importance of these methods, particularly how cubic splines provide smooth
+      velocity and acceleration profiles, while simpler interpolation techniques can be useful for constrained or real-time applications.
+    </p>
+
+    <p>
+      This experience also highlighted the complexity of humanoid robot control, especially the physical limitations, kinematic constraints,
+      and stability considerations involved when translating mathematical trajectories into real-world motion.
+    </p>
+
+    <div class="project-images-container">
+      <div class="project-image">
+        <img src="Media/Portfolio/yanshee-humanoid-robot/yanshee-me.jpg" 
+            alt="Me with Yanshee humanoid robot">
+      </div>
+    </div>
+
+    <iframe class="project-video"
+      width="900" height="506"
+      src="https://www.youtube.com/embed/61BOOe9IPQE?autoplay=1&mute=1"
+      title="Yanshee humanoid robot demo"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+
+    <style>
+      .project-images-container {
+        display: flex;
+        justify-content: center;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+      }
+
+      .project-image img {
+        max-width: 100%;
+        max-height: 500px;
+        border-radius: 8px;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+        object-fit: contain;
+        flex: 1 1 45%;
+      }
+
+      .project-video {
+        width: 100%;
+        max-width: 900px;
+        margin: 1.5rem auto;
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+      }
+    </style>
+  `
+},
+
   // Robovoid
   {
     id: "robovoid",
@@ -338,7 +422,7 @@ window.portfolioProjects = [
             <img src="Media/Portfolio/intelligent-robotics-gui-ml/Intelligent Robotics 2.jpeg" alt="Intelligent Robotics 2">
         </div>
         <div class="project-image">
-            <img src="Media/Portfolio/intelligent-robotics-gui-ml/Intelligent Robotics 3.jpeg" alt="Intelligent Robotics 3">
+            <img src="Media/Portfolio/intelligent-robotics-gui-ml/Intelligent Robotics 3.png" alt="Intelligent Robotics 3">
         </div>
       </div>
 

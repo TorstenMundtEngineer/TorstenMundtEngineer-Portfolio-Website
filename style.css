@@ -7,11 +7,11 @@
 }
 
 html {
-    scrollbar-color: #1e293b #1e293b00;
+    scrollbar-color: #1e293b #ffffff00;
 }
 
 body {
-    background-color: #38bff86b;
+    background-color: #BAE7FE;
     color: #e0e0e0;
     line-height: 1.6;
     overflow-x: hidden;
@@ -704,7 +704,7 @@ html, body {
 .subheading {
     font-size: 1.4rem;
     font-weight: 800;
-    color: #60a5fa; /* matches your accent color */
+    color: #60a5fa;
     margin-bottom: 0.5rem;
 }
 
@@ -729,28 +729,29 @@ html, body {
 }
 
 .about-volunteering ul,
-.about-hobbies ul {
-    font-size: 1.1rem;  /* slightly bigger than the default 1.4rem */
+.about-hobbies ul,
+.about-intro ul {
+    font-size: 1.1rem;
 }
 
 
 .High-School-images {
     display: flex;
-    justify-content: center; /* centre the group */
-    gap: 0.5rem;             /* space between images */
-    flex-wrap: wrap;          /* allow wrapping */
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
     margin-top: 1rem;
 }
 
 .High-School-images .hobbies-image {
-    flex: 0 1 auto;          /* allow shrinking but no forced growth */
+    flex: 0 1 auto;
     display: flex;
     justify-content: center;
 }
 
 .High-School-images img {
-    max-width: 400px;        /* maximum width */
-    width: 100%;             /* fill container */
+    max-width: 400px;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     object-fit: cover;
@@ -828,9 +829,10 @@ html, body {
 }
 
 .Index-Open-Day-Image {
-    flex: 1;
     display: flex;
     justify-content: center;
+    width: auto;
+    max-width: 100%;
 }
 
 @media (max-width: 700px) {
@@ -854,8 +856,27 @@ html, body {
         max-width: 100%;
         height: auto;
     }
-}
+    .intro-flex {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .intro-image {
+        width: 100%;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .intro-image img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .intro-flex ul {
+        width: 100%;
+        }
+}
 
 .Index-Open-Day-Image img {
     max-height: 350px;
@@ -872,7 +893,7 @@ html, body {
 }
 
 .hobbies-images .hobbies-image {
-    flex: 0 0 auto;      /* 🔑 stop flex growth */
+    flex: 0 0 auto;
     margin-top: 0;
 }
 
@@ -894,22 +915,19 @@ html, body {
 
 .intro-flex {
     display: flex;
-    align-items: flex-start; /* align top of image with top of text */
-    gap: 1.5rem;            /* space between image and text */
-    flex-wrap: wrap;         /* allows wrapping on smaller screens */
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .intro-image img {
-    width: 180px;            /* smaller image */
+    width: 250px;
     height: auto;
     border-radius: 16px;
 }
 
 .intro-flex ul {
-    flex: 1;                 /* take up remaining horizontal space */
-    padding-left: 1rem;
-    margin-top: 0;
-    font-size: 1.2rem;       /* increase font size */
+    flex: 1;
 }
 
 .Uni-images {
@@ -1038,7 +1056,7 @@ html, body {
 }
 
 .accordion-toggle:hover {
-    background: #38bff86b;
+    background: #BAE7FE;
 }
 
 .accordion-toggle .icon {
@@ -1073,11 +1091,11 @@ html, body {
 
 .accordion-item.active .accordion-content {
     display: block;
-    background: #38bff86b;
+    background: #BAE7FE;
 }
 
 .accordion-item.active .accordion-toggle {
-    background: #38bff86b; 
+    background: #BAE7FE; 
 }
 
 @media (max-width: 500px) {
